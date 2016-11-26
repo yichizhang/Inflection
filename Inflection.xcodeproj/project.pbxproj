@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		BDD8223F1AA4476700E48CEF /* Inflection_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */; };
 		BDD822471AA4477E00E48CEF /* Inflection.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BDD822441AA4477E00E48CEF /* Inflection.podspec */; };
-		BDD822481AA4477E00E48CEF /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD822451AA4477E00E48CEF /* LICENSE.md */; };
-		BDD822491AA4477E00E48CEF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD822461AA4477E00E48CEF /* README.md */; };
 		BDD8224B1AA447E400E48CEF /* Inflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8224A1AA447E400E48CEF /* Inflection.swift */; };
 /* End PBXBuildFile section */
 
@@ -147,8 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD822491AA4477E00E48CEF /* README.md in Sources */,
-				BDD822481AA4477E00E48CEF /* LICENSE.md in Sources */,
 				BDD8224B1AA447E400E48CEF /* Inflection.swift in Sources */,
 				BDD8223F1AA4476700E48CEF /* Inflection_Tests.swift in Sources */,
 			);
