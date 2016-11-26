@@ -19,7 +19,7 @@ public extension NSDictionary {
     }
     
     fileprivate func inflectDictionaryKeys(_ closure: @escaping (_ string: String) -> String) -> NSDictionary {
-        var newDictionary = NSMutableDictionary()
+        let newDictionary = NSMutableDictionary()
         self.forEach { newDictionary[closure($0 as! String)] = $1 }
 
         return newDictionary.copy() as! NSDictionary
@@ -112,7 +112,7 @@ public extension String {
         let lowercaseSet = CharacterSet.lowercaseLetters
         
         var buffer: NSString?
-        var output: NSMutableString = NSMutableString()
+        let output: NSMutableString = NSMutableString()
 
         scanner.caseSensitive = true
         
@@ -120,13 +120,13 @@ public extension String {
             if scanner.scanCharacters(from: identifierSet, into: &buffer) {
                 continue
             } else if !identifier.isEmpty {
-                var isUppercase: Bool = scanner.scanCharacters(from: uppercaseSet, into: &buffer)
+                let isUppercase: Bool = scanner.scanCharacters(from: uppercaseSet, into: &buffer)
                 if isUppercase {
                     output.append(identifier)
                     output.append(buffer!.lowercased)
                 }
                 
-                var isLowercase: Bool = scanner.scanCharacters(from: lowercaseSet, into: &buffer)
+                let isLowercase: Bool = scanner.scanCharacters(from: lowercaseSet, into: &buffer)
                 if isLowercase {
                     output.append(buffer!.lowercased)
                 }
